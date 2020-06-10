@@ -31,4 +31,3 @@ class NewsFeedViewController: UIViewController {
         viewModel?.filterArticles?(isFeatured)
     }
 }
-

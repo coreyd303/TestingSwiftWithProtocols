@@ -21,7 +21,7 @@ class NewsFeedViewModelImplementation: NewsFeedViewModel {
     var filterArticles: ((Bool) -> ())?
 
     func requestArticles(_ completion: @escaping () -> ()) {
-        let url = URL(string: "http://someNewsService.com")
+        let url = URL(string: "http://someNewsService.com/articles")
 
         let task = URLSession.shared.dataTask(with: url!) { data, response, err in
             DispatchQueue.main.async {
